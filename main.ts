@@ -10,11 +10,9 @@ basic.forever(function () {
         images.iconImage(IconNames.Angry).showImage(0)
         cuteBot.motors(-50, 0)
     } else if (cuteBot.tracking(cuteBot.TrackingState.L_R_unline)) {
-        soundExpression.mysterious.play()
         cuteBot.closeheadlights()
         cuteBot.stopcar()
     } else {
-        music.setBuiltInSpeakerEnabled(false)
         images.iconImage(IconNames.Ghost).showImage(0)
         cuteBot.motors(40, 40)
     }
